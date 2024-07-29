@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+    <link rel="stylesheet" href="Airbnb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- The Navigation Bar -->
+<div class="The-Header">
+    <div class="The-Container">
+        <nav class="The-Navigation-Bar">
+            <div class="The-Flex-Container">
+                <div class="The-Logo-Details">
+                    <div class="The-Airbnb-Logo">
+                       <a href="#" class="a-link"><img src="Airbnb_logo.svg"></a>
+                    </div>
+                </div>
+                 <div class="Stays-Experiences">
+                    <ul>
+                        <li><a href="" class="active">Stays</a></li>
+                        <li><a href="">Experiences</a></li>
+                    </ul>
+                 </div>
+                 <div class="Login-Section">
+                    <span><a href="">Airbub your home</a></span>
+                    <a href=""><i class="fa-solid fa-globe"></i></a>
+                    <div class="details">
+                        <i class="fa-solid fa-bars bars"></i>
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="modal">
+                        <ul>
+                            <div class="modal-lists">
+                                <li><a href="" class="SignUp">Sign up</a></li>
+                                <li><a href="" class="logIn">Log In</a></li>
+                            </div>
+                                <div class="modal-border">                                    
+                                </div>
+                             <div class="modal-lists">
+                                <li><a href="">Gift cards</a></li>
+                                <li><a href="">Airbnb your home</a></li>
+                                <li><a href="">Airbnb your home</a></li>
+                                <li><a href="">Help Center</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>           
+            </div>
+             <!-----second searchBar------->
+             <div class="search-bar">
+                 <ul>
+                    <div class="search-link search-expand">
+                        <li><a href="">Where</a><br>search Distination</li>
+                    </div>
+                    <div class="search-link search-date">
+                        <li><a href="">Check in</a><br>Add Date</li>
+                    </div>
+                    <div class="search-link search-date">
+                        <li><a href="">Check Out</a><br>Add date</li>
+                    </div>
+                   <div class="search-link search-add-guest ">
+                    
+                    <li><a href="#" class="search-add-link">Who</a>
+                        <br>Add Guests
+                    </li>
+                     </div>
+                
+                     <i class="fa fa-search search-color"></i>
+                 </ul>
+                
+            </div>
+            <div class="search-bar-sm">
+                <div class="search-device">
+                    <div class="search-details">
+                        
+                        <i class="fa fa-search"></i>
+                        <div class="search-para">
+                            <p style="font-weight: 600;">where to?</p>
+                            
+                            <p class="any-search"> Anywhere Any week Add Guests</p>
+                        </div>
+                        </div>
+                </div>
+            </div>
+
+
+        </nav>
+
+        <!---------sign up modal-------->
+        
+            <div class="sign-modal">
+                <div class="sign-details">
+                    <div class="sign-nav">
+                        <div class="times">&times</div>
+                        <h4>log in or sign up</h4>
+                    </div>
+                    <div class="sign-border">
+                        
+                    </div>
+                <div class="sign-items">
+                    <h3>welcome to Airbnb</h3>
+    
+                    <div class="input-field">
+                        
+                        <select id="country" placeholder="Country">
+                          <option value="United-States">United States</option>
+                          <option value="Other">Other (please specify)</option>
+                        </select>
+                        <input type="text" id="other-country" name="other-country" placeholder="Enter other country">
+                        
+                        <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+                      </div>
+                  </div>
+                  <p>We’ll call or text you to confirm your number. Standard message and data rates apply. <u>Privacy Policy</u></p>
+                  <button class="sign-btn">Sign Up</button>
+                </div>
+            </div>
+        <!-- The-Icon-Section -->
+        <div class="The-Icon-Section">
+            <button class="icon-arrow " aria-label="Scroll left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+                    <div class="The-Icons">
+                            <div class="Icon">
+                                <i class="fa-solid fa-key"></i>
+                                <p style="font-size: 13px;text-align: center;">New</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-car"></i>
+                                <p style="font-size: 13px;text-align: center;">Cars</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-golf-ball-tee"></i>
+                                <p style="font-size: 13px;text-align: center;">Golfing</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-city"></i>
+                                <p style="font-size: 13px;text-align: center;">Cities</p>                      
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-landmark"></i>
+                                <p style="font-size: 13px;text-align: center;">Landmarks</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fas fa-motorcycle"></i>
+                                <p style="font-size: 13px;text-align: center;">motorcycle</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-house"></i>
+                                <p style="font-size: 13px;text-align: center;">house</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-gift"></i>
+                                <p style="font-size: 13px;text-align: center;">Gifts</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fas fa-binoculars"></i>
+                                <p style="font-size: 13px;text-align: center;">binoculars</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fas fa-pen-ruler"></i>
+                                <p style="font-size: 13px;text-align: center;">pen</p>                                
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p style="font-size: 13px;text-align: center;">location</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-bowl-food"></i>
+                                <p style="font-size: 13px;text-align: center;">Food</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-plane"></i>
+                                <p style="font-size: 13px;text-align: center;">Flights</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-brands fa-discord"></i>
+                                <p style="font-size: 13px;text-align: center;">discord</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-bomb"></i>
+                                <p style="font-size: 13px;text-align: center;">bomb</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-camera-retro"></i>
+                                <p style="font-size: 13px;text-align: center;">Camera</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-truck-fast"></i>
+                                <p style="font-size: 13px;text-align: center;">Truck</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-pen-nib"></i>
+                                <p style="font-size: 13px;text-align: center;">pennib</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-face-smile"></i>
+                                <p style="font-size: 13px;text-align: center;">smile</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-paperclip"></i>
+                                <p style="font-size: 13px;text-align: center;">paperclip</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <p style="font-size: 13px;text-align: center;">shield</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-file"></i>
+                                <p style="font-size: 13px;text-align: center;">file</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-bell"></i>
+                                <p style="font-size: 13px;text-align: center;">Bell</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <p style="font-size: 13px;text-align: center;">shopping</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-filter"></i>
+                                <p style="font-size: 13px;text-align: center;">Filter</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-circle-info"></i>
+                                <p style="font-size: 13px;text-align: center;">Circle</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-solid fa-car"></i>
+                                <p style="font-size: 13px;text-align: center;">Car</p>
+                            </div>
+                            <div class="Icon">
+                                <i class="fa-brands fa-algolia"></i>
+                                <p style="font-size: 13px;text-align: center;">Algolia</p>
+                            </div>
+                    </div>
+            <button class="icon-arrow icon-arrow-right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        </div>
+    </div>
+    <!--1st Gallery Section-->
+    <div class="The-Gallery-Section">
+        <div class="The-Gallery-Container">
+            <div class="The-Gallery-Contents">
+                <div class="The-Gallery-Images">
+                    <div class="The-Gallery">
+                        <img src="Koenigsegg Jesko.jpg" class="The-Image">
+                        <p class="The-Image-Details">Drive the latest koenigsegg</p>
+                        <p class="The-Image-Details Second-Details">Hosted by Sanusi</p>
+                        <p class="The-Image-Details">$300 per person</p>
+                    </div>
+                    <div class="The-Gallery">
+                        <img src="Isreal Adesanya.jpg" class="The-Image">
+                        <p class="The-Image-Details">Go Toe to Toe with Adensanya</p>
+                        <p class="The-Image-Details Second-Details">Hosted by Dana White</p>
+                        <p class="The-Image-Details">sold out</p>
+                    </div>
+                    <div class="The-Gallery">
+                        <img src="Xavier's Mansion.webp" class="The-Image">
+                        <p class="The-Image-Details">Crash at Xavier's Mansion</p>
+                        <p class="The-Image-Details Second-Details">Hosted by Jubilie</p>
+                        <p class="The-Image-Details">Free</p>
+                    </div>
+                    <div class="The-Gallery">
+                        <img src="Trevor Wallace.jpg" class="The-Image">
+                        <p class="The-Image-Details">Go VIP with Trevor Wallace</p>
+                        <p class="The-Image-Details Second-Details">Hosted by Trevor</p>
+                        <p class="The-Image-Details">Coming August</p>
+                    </div>
+                    <div class="The-Gallery">
+                        <img src="IMDb.jpeg" class="The-Image">
+                        <p class="The-Image-Details">Rate Movies With IMDb</p>
+                        <p class="The-Image-Details Second-Details">Hosted by Sanusi</p>
+                        <p class="The-Image-Details">$100 per rating</p>
+                    </div>
+                    <div class="The-Gallery">
+                        <img src="Xavier's Mansion.webp" class="The-Image">
+                        <p class="The-Image-Details">Crash at the X-mansion</p>
+                        <p class="The-Image-Details Second-Details">Hosted by Wolverine</p>
+                        <p class="The-Image-Details">sold out</p>
+                    </div>
+                    <div class="The-Gallery">
+                        <img src="Gordon Ramsay.jpg" class="The-Image">
+                        <p class="The-Image-Details">Get the Experience with G.Ramsay</p>
+                        <p class="The-Image-Details Second-Details">Hosted by G.Ramsay</p>
+                        <p class="The-Image-Details">sold out</p>
+                    </div>
+                    <div class="The-Gallery">
+                        <img src="Lewis Hamilton.jpg" class="The-Image">
+                        <p class="The-Image-Details">Race L.Hamilton at the Grand Prix</p>
+                        <p class="The-Image-Details Second-Details">Hosted by Sanusi</p>
+                        <p class="The-Image-Details">$500 per lap</p>
+                    </div>
+                    <div class="The-Gallery">
+                        <img src="Home In Bahamas.jpeg" class="The-Image">
+                        <p class="The-Image-Details">Get an exquisite home in the bahamas</p>
+                        <p class="The-Image-Details Second-Details">Hosted by Sanusi</p>
+                        <p class="The-Image-Details">$30k per night</p>
+                    </div>
+                    <div class="The-Gallery">
+                        <img src="House Plant Retreat.jpg" class="The-Image">
+                        <p class="The-Image-Details">Houseplant Retreat</p>
+                        <p class="The-Image-Details Second-Details">Hosted by Seth Rogen</p>
+                        <p class="The-Image-Details">sold out</p>
+                    </div>
+                    <div class="The-Gallery">
+                        <img src="Home Alone Holiday.webp" class="The-Image">
+                        <p class="The-Image-Details">Home Alone Holiday</p>
+                        <p class="The-Image-Details Second-Details">Hosted by Buzz</p>
+                        <p class="The-Image-Details">sold out</p>
+                    </div> 
+                </div>   
+            </div>
+        </div>
+    </div>
+    <!-- 2nd Gallery Section -->
+    <div class="The-Gallery-Section">
+        <div class="The-Gallery-Section">
+            <div class="The-Gallery-Section">
+                <div class="The-Gallery-Images">
+                    <h2 class="Past-Experiences">Past Experiences</h2>
+                    <div class="The-Gallery">
+                        <img src="Olympic games at musee dOrsay.webp" class="The-Image">
+                        <p class="The-Image-Details">Open the Olympic Games at musee</p>
+                        <p class="The-Image-Details Second-Details">Hosted by Mathieu Lehanneur</p>
+                        <p class="The-Image-Details">sold out</p>
+                    </div>
+                    <div class="The-Gallery">
+                        <img src="Tour with Feid.jpg" class="The-Image">
+                        <p class="The-Image-Details">Go on tour with Feid</p>
+                        <p class="The-Image-Details Second-Details">Hosted by Feid</p>
+                        <p class="The-Image-Details">sold out</p>
+                    </div>
+                    <div class="The-Gallery">
+                        <img src="Shrek Swap.jpg" class="The-Image">
+                        <p class="The-Image-Details">Shrek's Swap</p>
+                        <p class="The-Image-Details Second-Details">Hosted by Donkey</p>
+                        <p class="The-Image-Details">sold out</p>
+                    </div>
+                    <div class="The-Gallery">
+                        <img src="Ted Lassos Favorite pub.jpeg" class="The-Image">
+                        <p class="The-Image-Details">Ted Lasso's Favorite Pub</p>
+                        <p class="The-Image-Details Second-Details">Hosted by Mae</p>
+                        <p class="The-Image-Details">sold out</p>
+                    </div>
+                    <div class="The-Gallery">
+                        <img src="Khaby Lame.webp" class="The-Image">
+                        <p class="The-Image-Details">Game with Khaby Lame</p>
+                        <p class="The-Image-Details Second-Details">Hosted by Khaby Lame</p>
+                        <p class="The-Image-Details">sold out</p>
+                    </div>
+                    <div class="The-Gallery">
+                        <img src="Inside Out 2.webp" class="The-Image">
+                        <p class="The-Image-Details">Make Memories with Inside Out 2</p>
+                        <p class="The-Image-Details Second-Details">Hosted by Joy</p>
+                        <p class="The-Image-Details">sold out</p>
+                    </div>
+                    <div class="The-Gallery">
+                        <img src="Ferrari Museum.jpg" class="The-Image">
+                        <p class="The-Image-Details">Explore Ferrari's Museum</p>
+                        <p class="The-Image-Details Second-Details">Hosted by Marc Gene</p>
+                        <p class="The-Image-Details">sold out</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- The Footer -->
+    <div class="The-Footer">
+        <div class="The-Footer-Container">
+            <div class="The-Footer-Contents">
+                <h2>Inspiration for future gateway</h2>
+                <div class="The-Footer-Heading">
+                    <ul class="The-Footer-Links">
+                        <li class="Footer-Text">
+                            <a href="">popular</a>
+                        </li>
+                        <li class="Footer-Text">
+                            <a href="">Art & culture</a>
+                        </li>
+                        <li class="Footer-Text">
+                            <a href="">Outdoors</a>
+                        </li>
+                        <li class="Footer-Text">
+                            <a href="">Mountain</a>
+                        </li>
+                        <li class="Footer-Text">
+                            <a href="">Beach</a>
+                        </li>
+                        <li class="Footer-Text">
+                            <a href="">Unique stays</a>
+                        </li>
+                        <li class="Footer-Text">
+                            <a href="">Categories</a>
+                        </li>
+                        <li class="Footer-Text">
+                            <a href="">Things to do</a>
+                        </li>
+                        <li class="Footer-Text">
+                            <a href="">Travel tips and inspiration</a>
+                        </li>
+                        
+                        <li class="Footer-Text">
+                            <a href="">Airbnb-friendly Apartments</a>
+                        </li>   
+                    </ul>
+                </div>
+                <div class="Sub-Footer">
+                    <div class="Sub-Footer-Links">
+                       <div class="Sub-Footer-Contents">
+                        <ul>
+                            <li>Canmore
+                                <p>Pet-friendly rentals</p>
+                            </li>
+                            <li>Benalmádena
+                                <p>Apartment rentals</p>
+                            </li>
+                            <li>Marbella
+                                <p> Cottage rentals</p>
+                            </li>
+                        </ul>
+                     </div>
+                     <div class="Sub-Footer-Contents">
+                        <ul>
+                            <li>Mijas
+                            <p>Vacation rentals</p>
+                            </li>
+                            <li>purpose
+                                <p>entertainment</p>
+                            </li>
+                            <li>Anaheim
+                                <p>Beach house rentals</p>
+                            </li>
+                        </ul>
+                     </div>
+                     <div class="Sub-Footer-Contents">
+                        <ul>
+                            <li>Sonoma
+                                <p>House rentals</p>
+                            </li>
+                            <li>Ibiza
+                                <p>Apartment rentals</p>
+                            </li>
+                            <li>Mountain View 
+                                <p>Pet-friendly rentals</p>
+                            </li>
+                        </ul>
+                     </div>
+                     <div class="Sub-Footer-Contents">
+                        <ul>
+                            <li>Monterey
+                                <p>Cottage rentals</p>
+                            </li>
+                            <li>Paso Robles
+                                <p>Vacation rentals</p>
+                            </li>
+                            <li>Santa Barbara
+                                <p>Apartment rentals</p>
+                            </li>
+                        </ul>
+                     </div>
+                     <div class="Sub-Footer-Contents">
+                        <ul>
+                            <li>jasper
+                                <p>Cabin rentals</p>
+                            </li>
+                            <li>Tucson
+                                <p>Vacation rentals</p>
+                            </li>
+                            <li>purpose
+                                <p>entertainment</p>
+                            </li>
+                        </ul>
+                     </div>
+                     <div class="Sub-Footer-Contents">
+                        <ul>
+                            <li>Mallacoota
+                                <p>Pet-friendly rentals</p>
+                            </li>
+                            <li>Devonport
+                                <p>Cottage rentals</p>
+                            </li>
+                            <li>
+                                Show more <i class="fa-solid fa-angle-down"></i>
+                            </li>
+                        </ul>
+                     </div>
+                    </div>
+                    <div class="Bottom-Footer">
+                        <div class="Bottom-Footer-Contents">
+                            <div class="Bottom-Footer-Text">
+                                <ul>
+                                    <li class="active">Support</li>
+                                    <li>Help Center</li>
+                                        <li>AirCover</li>
+                                        <li>Anti-discrimination</li>
+                                        <li>Disability support</li>
+                                        <li>Cancellation options</li>
+                                        <li>Report neighborhood concern</li>
+                                </ul>
+                            </div>
+                            <div class="Bottom-Footer-Text">
+                                <ul>
+                                    <li class="active">Hosting</li>
+                                    <li>Airbnb your home</li>
+                                        <li>AirCover</li>
+                                        <li>Hosting resources</li>
+                                        <li>Community forum</li>
+                                        <li>Hosting responsibly</li>
+                                        <li>Join a free Hosting class</li>
+                                </ul>
+                            </div>
+                            <div class="Bottom-Footer-Text">
+                                <ul>
+                                    <li class="active">Newsroom</li> 
+                                    <li>New features</li>
+                                        <li>Careers</li>
+                                        <li>Investors</li>
+                                        <li>Gift cards</li>
+                                        <li>Cancellation options</li>
+                                        <li>Airbnb.org emergency stays</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="The-Footer-Links">
+                        <ul class="Footer-Links">
+                            <li class="Footer-Text">
+                                <a href="">© 2024 Airbnb, Inc.</a>
+                            </li>
+                            <li class="Footer-Text">
+                                <a href="">Terms</a>
+                            </li>
+                            <li class="Footer-Text">
+                                <a href="">Sitemaps</a>
+                            </li>
+                            <li class="Footer-Text">
+                                <a href="">Privacy</a>
+                            </li>
+                            <li class="Footer-Text">
+                                <a href="">Your Privacy Choice</a>
+                            </li>
+                            <li class="Dev">
+                                <p>|Developed by Muhammad Sanusi Abdullahi|</p>
+                            </li>   
+                        </ul>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+<script src="Airbnb.js"></script>
+</body>
+</html>
